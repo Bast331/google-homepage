@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--Header-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="javascript/jquery 3.6.js"></script>
 </head>
+
+<!--body-->
 <body>
+    <!--Navigation-->
     <nav class="Navigation_Container">
-        <div class="nav_ÜberGoogle"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjPp8jGjdvwAhVqB2MBHU1_A-cQkNQCCAI&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-DE%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw11hSySvhw2lpjxMS0MuRKX">
-            Über Google</a></div>
-        <div class="nav_Store"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjPp8jGjdvwAhVqB2MBHU1_A-cQpMwCCAM&url=https%3A%2F%2Fstore.google.com%2FDE%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Dde-DE&usg=AOvVaw21x6ai43HfkUtiOgZaOat4">
-            Store</a></div>
-        <div class="nav_Gmail"><a href="https://mail.google.com/mail/&ogbl">
-            Gmail</a></div>
-        <div class="nav_Bilder"><a href="">
-            Bilder</a></div>
-        <div class="Icon_GoogleApps"><a href="https://www.google.de/intl/de/about/products">
-            </a></div>
-        <div class="Button_Anmelden"><a href="https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">
-            Anmelden</a></div>
+        <!--Container links-->
+        <div class="Navigation_links">
+        <a class="ÜberGoogle Nav-Link"
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjPp8jGjdvwAhVqB2MBHU1_A-cQkNQCCAI&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-DE%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw11hSySvhw2lpjxMS0MuRKX">
+            Über Google</a>
+        <a class="Store Nav-Link"
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjPp8jGjdvwAhVqB2MBHU1_A-cQpMwCCAM&url=https%3A%2F%2Fstore.google.com%2FDE%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Dde-DE&usg=AOvVaw21x6ai43HfkUtiOgZaOat4">
+            Store</a>
+        </div>
+
+        <!--Container rechts-->
+        <div class="container_rechts">
+        
+        <a class="Gmail Nav-Link"
+            href="https://mail.google.com/mail/&ogbl">
+            Gmail</a>
+        <a class="Bilder Nav-Link"
+            href="https://www.google.de/imghp?hl=de&ogbl">
+            Bilder</a>
+        
+        <a class="GoogleApps Nav-Link"
+            href="https://www.google.de/intl/de/about/products">
+            </a>
+        
+
+        <button class="Button_Anmelden"><a class="Anmelden"
+            href="https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">
+            Anmelden</a></button>
+        </div>
     </nav>
     <main>
+        <!-- Main Content: Logo searchbar unter searchbar-->
     <div class="Container_maincontent">
-        <img class="Logo-Google" alt="Logo von Google" src="img/googlelogo_color_272x92dp.png">
+        <div class="Container_Logo">
+            
+                <img class="Logo-Google" alt="Logo von Google" src="img/googlelogo_color_272x92dp.png">
+           
+        </div>
         <div class="searchbar_container">
             
             <span class="searchbar-icon">
@@ -34,11 +62,16 @@
                 <label for="search" type="text" class="searchbar"></label>
                 <input type="text" name="searchbar" id="searchbar"> 
             </div>
-            
         </div>
-        
-    </div>
-    
+
+        <div class="Unter_searchbar">
+            <button class="Google-Suche">Google Suche</button>
+            <button class="Glück">Auf gut Glück!</button>
+        </div>
+        </div>
     </main>
+
+
+    <script src="javascript/main.js"></script>
 </body>
 </html>

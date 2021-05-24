@@ -1,0 +1,182 @@
+/* Voreinstellungen*/
+body {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+
+/* Navigation -Container: Flexbox*/
+.Navigation_Container {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Container der zwei divs auch Flexbox*/
+.Navigation_links {
+display: flex;
+padding-top: 8px;
+}
+
+.container_rechts {
+    display: flex;
+    font-size: 13px;
+    padding-top: 4px;
+}
+
+/* Stylen der Links und Positionierung*/
+/* Alle Links gemeinsam*/
+.Nav-Link {
+    padding: 3px 5px 5px 5px;
+    margin: 0px 5px;
+    text-decoration: none;
+    color: #222;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+/* speziell für manche Links*/
+.ÜberGoogle {
+   margin-bottom: 5px;
+   margin-left: 1.25rem;
+}
+
+.GoogleApps {
+    background-image: url(../img/-apps_90405.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+    top: 8px;
+    display: inline-block;
+    height: 14px;
+    opacity: 0.6;
+    vertical-align: middle;
+    padding-right: 2rem;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+.Button_Anmelden {
+    background: #1a73e8;
+    border: 1px solid transparent;
+    margin-right: 1.25rem;
+    margin-left: 0.2rem;
+    width: 6rem;
+    border-radius: 4px;
+    height: 2.25rem;
+    width: 7rem;
+}
+
+.Anmelden {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    min-width: 96px;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box; 
+}
+
+/*Div um Logo und Searchbar- setzt Elemente im Container in die Mitte*/
+.Container_maincontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+.Container_Logo {
+    margin-top: 4rem;
+    min-height: 92px;
+}
+
+/*Größe und Abstand zwischen Logo und Searchbar*/
+.Logo-Google { 
+   width: auto;
+   vertical-align: middle;
+   min-height: 92px;
+   margin-bottom: 2rem;
+}
+
+/*Form der Searchbar; Anwesiung flexbox für das Innere*/
+.searchbar_container {
+    border: 1px #dfe1e5 solid;
+    border-radius: 24px;
+    padding-left: 20px;
+    height: 44px;
+    width: 35rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+}
+
+/*Hover-Effekt der Searchbar */
+.searchbar_container:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.focus {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+/* Container des linken Icons(Suche) Höhe, Farbe, Position*/
+.searchbar-icon {
+    display: inline-block;
+    color: #9aa0a6;
+    height: 20px;
+    width: 20px;
+    fill: currentColor;
+    margin-top: 12px;
+    padding-right: 1rem;
+}
+
+/*linkes Iocn (Suche) Größe, Farbe*/
+.Icon_Search {
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+    
+}
+
+/*Eingabefeld der Searchbar Größe, keine border*/
+#searchbar {
+    width: 31.5rem;
+    height: 42px;
+    border: transparent;
+}
+
+/* Eingabefeld der Seachbar wenn sie angeklickt ist*/
+
+#searchbar:focus{
+    outline: none;
+}
+
+
+/* Content unter Searchbar: Position und Größe*/
+.Unter_searchbar {
+    padding-top: 1.5rem;
+}
+
+.Google-Suche {
+    border: 1px transparent;
+    margin-right: 0.25rem;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    padding: 0.5rem 1rem;
+}
+
+.Glück {
+    border: 1px transparent;
+    margin-left: 0.5rem;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    padding: 1rem 1.5rem;
+}
