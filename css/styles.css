@@ -1,9 +1,23 @@
 /* Voreinstellungen*/
+html {
+    height: 100%;
+}
+
 body {
     font-size: 14px;
     font-family: arial, sans-serif;
+    height: 100%;
 }
 
+.AußerFooter {
+    min-height: 100%;
+    position: relative;
+    
+}
+
+.Main-Content {
+    padding-bottom: 98.25px;
+}
 
 /* Navigation -Container: Flexbox*/
 .Navigation_Container {
@@ -37,21 +51,26 @@ padding-top: 8px;
     line-height: 30px;
 }
 
+.Nav-Link:hover {
+    text-decoration: underline;
+}
 /* speziell für manche Links*/
 .ÜberGoogle {
    margin-bottom: 5px;
    margin-left: 1.25rem;
 }
 
+
 .GoogleApps {
     background-image: url(../img/-apps_90405.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     position: relative;
-    top: 8px;
+    top: 8.25px;
+    right: 6.5px;
     display: inline-block;
     height: 14px;
-    opacity: 0.6;
+    opacity: 0.5;
     vertical-align: middle;
     padding-right: 2rem;
     padding-left: 10px;
@@ -59,6 +78,16 @@ padding-top: 8px;
     color: #000;
 }
 
+.GoogleApps_hover {
+    height: 38px;
+    width: 38px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.GoogleApps_hover:hover {
+    background-color: rgba(60,64,67,0.08);
+    border-radius: 50%;
+}
 
 .Button_Anmelden {
     background: #1a73e8;
@@ -69,6 +98,11 @@ padding-top: 8px;
     border-radius: 4px;
     height: 2.25rem;
     width: 7rem;
+}
+
+.Button_Anmelden:hover {
+    background: #2b7de9;
+    box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
 }
 
 .Anmelden {
@@ -90,10 +124,11 @@ padding-top: 8px;
     align-items: center;
     box-sizing: border-box;
     
+    
 }
 .Container_Logo {
-    margin-top: 4rem;
-    min-height: 92px;
+    height: 92px;
+    
 }
 
 /*Größe und Abstand zwischen Logo und Searchbar*/
@@ -101,7 +136,7 @@ padding-top: 8px;
    width: auto;
    vertical-align: middle;
    min-height: 92px;
-   margin-bottom: 2rem;
+   margin-bottom: 1.5rem;
 }
 
 /*Form der Searchbar; Anwesiung flexbox für das Innere*/
@@ -162,21 +197,101 @@ padding-top: 8px;
 
 /* Content unter Searchbar: Position und Größe*/
 .Unter_searchbar {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
 }
 
-.Google-Suche {
-    border: 1px transparent;
+.Google-Suche_Button {
+    border: 1px solid #f8f9fa;
+    
     margin-right: 0.25rem;
     background-color: #f8f9fa;
     color: #3c4043;
     padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.Glück_Button {
+    border: 1px solid #f8f9fa;
+    
+    margin-left: 0.25rem;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.Google-Suche {
+    text-decoration: none;
+    color: #3c4043;
 }
 
 .Glück {
-    border: 1px transparent;
-    margin-left: 0.5rem;
-    background-color: #f8f9fa;
+    text-decoration: none;
     color: #3c4043;
-    padding: 1rem 1.5rem;
+}
+
+.Google-Suche_Button:hover  {
+    border: 1px solid #dadce0;
+    color: #202124;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+.Glück_Button:hover {
+    border: 1px solid #dadce0;
+    color: #202124;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+
+
+.footer {
+    background-color: #f2f2f2;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 98.25px;
+}
+
+.top_Footer {
+padding: 1rem 2rem;
+border-bottom: 1px solid #dadce0;
+color: rgba(0,0,0,.54);
+font-size: 15px;
+}
+
+.bottom_Footer {
+    display: flex;
+    height: 2rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+.Footer-Link {
+    color: #70757a;
+    text-decoration: none;
+    padding: 1rem 0.75rem;
+}
+
+.Footer-Link:hover {
+    text-decoration: underline;
+}
+
+.Werbeprogramme {
+    padding-left: 2rem;
+}
+
+.Einstellungen {
+    padding-right: 2rem;
+}
+
+.Icon_Footer {
+    height: 0.8rem;
+}
+
+.CO2 {
+    padding-left: 0;
 }

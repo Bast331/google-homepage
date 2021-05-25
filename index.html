@@ -13,6 +13,7 @@
 
 <!--body-->
 <body>
+<div class="AußerFooter">
     <!--Navigation-->
     <nav class="Navigation_Container">
         <!--Container links-->
@@ -34,21 +35,21 @@
         <a class="Bilder Nav-Link"
             href="https://www.google.de/imghp?hl=de&ogbl">
             Bilder</a>
-        
+        <div class="GoogleApps_hover">
         <a class="GoogleApps Nav-Link"
             href="https://www.google.de/intl/de/about/products">
             </a>
-        
+        </div>
 
         <button class="Button_Anmelden"><a class="Anmelden"
             href="https://accounts.google.com/ServiceLogin?hl=de&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">
             Anmelden</a></button>
         </div>
     </nav>
-    <main>
+    <main class="Main-Content">
         <!-- Main Content: Logo searchbar unter searchbar-->
     <div class="Container_maincontent">
-        <div class="Container_Logo">
+        <div class="Container_Logo" id="Container_Logo">
             
                 <img class="Logo-Google" alt="Logo von Google" src="img/googlelogo_color_272x92dp.png">
            
@@ -65,13 +66,43 @@
         </div>
 
         <div class="Unter_searchbar">
-            <button class="Google-Suche">Google Suche</button>
-            <button class="Glück">Auf gut Glück!</button>
+            <button class="Google-Suche_Button"><a href="#" class="Google-Suche">Google Suche</a></button>
+            <button class="Glück_Button"><a href="#" class="Glück">Auf gut Glück!</a></button>
         </div>
         </div>
     </main>
+</div>
 
+    <footer class="footer">
+        <div class="top_Footer">
+            Deutschland
+        </div>
+        <div class="bottom_Footer">
+            <div class="left_Footer">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjR8M2_rOTwAhXCgv0HHWWjAV4QkdQCCA4&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fde_de%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw1du9iyM9670M6tgC8t-gt8" 
+                class="Werbeprogramme Footer-Link">Werbeprogramme</a>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjR8M2_rOTwAhXCgv0HHWWjAV4QktQCCA8&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K" 
+                class="Unternehmen Footer-Link">Unternehmen</a>
+                <a href="https://google.com/search/howsearchworks/?fg=1" 
+                class="Google-Suche Footer-Link">Wie funktioniert die Google Suche?</a>
+            </div>
+            <div class="middle_Footer">
+                <img src="img/googleleafe.png" class="Icon_Footer">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&ved=0ahUKEwjR8M2_rOTwAhXCgv0HHWWjAV4QiM8HCBA&url=https%3A%2F%2Fsustainability.google%2Fintl%2Fde%2Fcommitments-europe%2F%3Futm_source%3Dgooglehpfooter%26utm_medium%3Dhousepromos%26utm_campaign%3Dbottom-footer%26utm_content%3D&usg=AOvVaw1plZhEILD15UhmCx-_l24p" 
+                class="CO2 Footer-Link">CO2-neutral seit 2007</a>
+            </div>
+            <div class="right_Footer">
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjR8M2_rOTwAhXCgv0HHWWjAV4Q8awCCBE&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Dde%26fg%3D1&usg=AOvVaw3gTaWYgmAu7sI3AoWOcuQj" 
+                class="Datenschutz Footer-Link">Datenschutzerklärung</a>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjR8M2_rOTwAhXCgv0HHWWjAV4Q8qwCCBI&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Dde%26fg%3D1&usg=AOvVaw1fvYmShTLTf9mqX4pbLzHu" 
+                class="Nutzung Footer-Link">Nutzungsbedingungen</a>
+                <a href="#" 
+                class="Einstellungen Footer-Link">Einstellungen</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="javascript/main.js"></script>
+    <script src="javascript/margintop.js"></script>
 </body>
 </html>

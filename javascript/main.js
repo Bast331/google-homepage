@@ -11,4 +11,6 @@ $(document).ready(function() {
     $('.searchbar-icon').click(function(event) {
         $('#searchbar').focus();
     })
+
+    
 })
