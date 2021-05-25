@@ -7,6 +7,7 @@ body {
     font-size: 14px;
     font-family: arial, sans-serif;
     height: 100%;
+    
 }
 
 .AußerFooter {
@@ -128,15 +129,15 @@ padding-top: 8px;
 }
 .Container_Logo {
     height: 92px;
-    
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 /*Größe und Abstand zwischen Logo und Searchbar*/
 .Logo-Google { 
-   width: auto;
-   vertical-align: middle;
+   display: block;
    min-height: 92px;
-   margin-bottom: 1.5rem;
+   margin: 0 auto;
 }
 
 /*Form der Searchbar; Anwesiung flexbox für das Innere*/
