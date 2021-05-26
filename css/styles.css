@@ -1,153 +1,144 @@
 /* Voreinstellungen*/
 html {
-    height: 100%;
+    height: 100%;   /* Höhe der Site */
 }
 
 body {
-    font-size: 14px;
+    font-size: 14px;    /* Schriftart, -größe */
     font-family: arial, sans-serif;
-    height: 100%;
-    
-}
-
-.AußerFooter {
-    min-height: 100%;
-    position: relative;
-    
+    height: 100%;   /* Höhe der Site*/
+    display: flex;  /*Flex-box für den sticky footer */
+    flex-direction: column;
 }
 
 .Main-Content {
-    padding-bottom: 98.25px;
+    padding-bottom: 2rem; /* Padding damit der footer auch bei kleiner screen size nicht direkt am main content klebt */
 }
 
 /* Navigation -Container: Flexbox*/
-.Navigation_Container {
-    display: flex;
+.Navigation_Container { 
+    display: flex;  /* Flexbox um Elemente links und rechts festzulegen */
     align-items: center;
-    height: 3.5rem;
     flex-direction: row;
     justify-content: space-between;
+    height: 3.5rem; /* Höhe des divs */
 }
 
 /*Container der zwei divs auch Flexbox*/
 .Navigation_links {
-display: flex;
-padding-top: 8px;
+display: flex;  /* Flexbox damit ÜberGoogle und Store nebeneinander stehen*/
+padding-top: 11px;  /* Abstand zum oberen Ende der Site*/
 }
 
 .container_rechts {
-    display: flex;
-    font-size: 13px;
-    padding-top: 4px;
+    display: flex;  /* Flexbox damit Gmail, Bilder etc. nebeneinander stehen*/
+    font-size: 13px;    /* Veränderung der font-size*/
+    padding-top: 4px;   /* Abstand zum oberen Ende der Site; (anders wegen button und Icon*/
 }
 
 /* Stylen der Links und Positionierung*/
 /* Alle Links gemeinsam*/
 .Nav-Link {
-    padding: 3px 5px 5px 5px;
-    margin: 0px 5px;
-    text-decoration: none;
+    padding: 3px 5px 5px 5px;   /* Abstand der Links zueinander*/
+    margin: 0px 5px;    /* Abstand von Store und Icon zu anderen Links*/
+    text-decoration: none;  /* Underline weg*/
     color: #222;
-    vertical-align: middle;
-    line-height: 30px;
+    line-height: 30px; /* Abstand nach oben, damit Gmail und Bilder auf selber Höhe wie Icon und Button */
 }
 
 .Nav-Link:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Hover-Effekt der Links: Underline*/
 }
 /* speziell für manche Links*/
 .ÜberGoogle {
-   margin-bottom: 5px;
-   margin-left: 1.25rem;
+   margin-bottom: 5px;  /* Abstand nach unten (nicht wirklich notwendig */
+   margin-left: 1.25rem;    /* Abstand zwischen ÜberGoogle und linkem Rand*/
 }
 
 
 .GoogleApps {
-    background-image: url(../img/-apps_90405.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    position: relative;
+    background-image: url(../img/-apps_90405.svg); /* Einbinden des Icons*/
+    background-repeat: no-repeat;   /* Keine Wdh des Background Bild*/
+    background-position: 50% 50%;   /* mittige Position des Icons*/
+    position: relative; /* relative, damit Icon an Platz geschoben werden kann */
     top: 8.25px;
     right: 6.5px;
-    display: inline-block;
-    height: 14px;
-    opacity: 0.5;
-    vertical-align: middle;
-    padding-right: 2rem;
-    padding-left: 10px;
-    cursor: pointer;
-    color: #000;
+    display: inline-block;  /* damit padding passt*/
+    height: 14px;   /* Höhe des Icons*/
+    opacity: 0.5;   /* Farbe des Icons*/
+    padding-right: 2rem;    /* Abstand zum Button*/
+    padding-left: 10px; /* Abstand zu Bilder*/
+    cursor: pointer;    /* Cursor, damit erkannt wird, dass klickbar*/
+    color: #000;    
 }
 
 .GoogleApps_hover {
-    height: 38px;
+    height: 38px;   /* Höhe und Breite des divs*/
     width: 38px;
-    margin-right: 0.5rem;
+    margin-right: 0.5rem;   /* Abstände */
     margin-left: 0.5rem;
 }
 .GoogleApps_hover:hover {
-    background-color: rgba(60,64,67,0.08);
-    border-radius: 50%;
+    background-color: rgba(60,64,67,0.08);  /* Hintergrund Farbe des divs bei hover*/
+    border-radius: 50%; /* Form (rund) des divs bei hover*/
 }
 
 .Button_Anmelden {
-    background: #1a73e8;
-    border: 1px solid transparent;
-    margin-right: 1.25rem;
-    margin-left: 0.2rem;
-    width: 6rem;
-    border-radius: 4px;
-    height: 2.25rem;
-    width: 7rem;
+    background: #1a73e8;    
+    border: 1px solid transparent; /* border vorhanden, aber nicht sichtbar*/
+    margin-right: 1.25rem;  /* Abstand zwischen Button und rechtem Rand*/
+    margin-left: 0.2rem;    /* Abstand zwichen Button und Icon*/
+    border-radius: 4px; /* abgreundete Ecken des Buttons*/
+    height: 2.25rem;    /* Höhe des Buttons*/
+    width: 7rem;    /* Breite des Buttons*/
 }
 
 .Button_Anmelden:hover {
-    background: #2b7de9;
+    background: #2b7de9;    /* Hintergrundfarbe bei hover ändert sich + box-shadow*/
     box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
 }
 
 .Anmelden {
-    color: white;
+    color: white;   /* Schrift im Button (kein Underline)*/
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    letter-spacing: .25px;
-    min-width: 96px;
-    text-align: center;
-    vertical-align: middle;
+    letter-spacing: .25px;  /* Buchstaben weiter auseinander*/
+    min-width: 96px;    /* Standardeinstellungen: width und border-box*/
     box-sizing: border-box; 
 }
 
 /*Div um Logo und Searchbar- setzt Elemente im Container in die Mitte*/
 .Container_maincontent {
-    display: flex;
+    display: flex;  /* Flexbox damit Elemente untereinander mittig angezeigt werden*/
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    
-    
-}
-.Container_Logo {
-    height: 92px;
-    width: 100%;
-    margin-bottom: 1.5rem;
 }
 
-/*Größe und Abstand zwischen Logo und Searchbar*/
+/* Div um Logo*/
+.Container_Logo {
+    width: 100%;    /* Grundeinstellungen*/
+    height: 92px;
+    margin-top: 10%;    /* damit margin top anhängig con screen height ändert*/
+    margin-bottom: 1.5rem;  /* Abstand zur searchbar*/
+}
+
+/* Google Logo*/
 .Logo-Google { 
-   display: block;
+   display: block;  /* Größe und mittig setzen des Logos*/
    min-height: 92px;
    margin: 0 auto;
 }
 
 /*Form der Searchbar; Anwesiung flexbox für das Innere*/
 .searchbar_container {
-    border: 1px #dfe1e5 solid;
+    border: 1px #dfe1e5 solid;  /* Form der searchbar*/
     border-radius: 24px;
-    padding-left: 20px;
-    height: 44px;
+    padding-left: 15px; /* Abstand des SuchIcons zur border*/
+    height: 44px;   /* Grundeinstellung*/
     width: 35rem;
-    display: flex;
+    display: flex;  /* icon und input nebeneindander*/
     flex-direction: row;
     margin-bottom: 0.5rem;
 }
@@ -158,6 +149,7 @@ padding-top: 8px;
     border-color: rgba(223,225,229,0);
 }
 
+/* Focus Effekt der Searchbar (wird von js genutzt)*/
 .focus {
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
     border-color: rgba(223,225,229,0);
@@ -165,16 +157,16 @@ padding-top: 8px;
 
 /* Container des linken Icons(Suche) Höhe, Farbe, Position*/
 .searchbar-icon {
-    display: inline-block;
+    display: inline-block;  /*Grundeinstellung*/
     color: #9aa0a6;
     height: 20px;
     width: 20px;
     fill: currentColor;
-    margin-top: 12px;
+    margin-top: 12px;   /* Abstand zur border, bzw mittig*/
     padding-right: 1rem;
 }
 
-/*linkes Iocn (Suche) Größe, Farbe*/
+/*linkes Icon (Suche) Größe, Farbe*/
 .Icon_Search {
     width: 20px;
     height: 20px;
@@ -186,24 +178,23 @@ padding-top: 8px;
 #searchbar {
     width: 31.5rem;
     height: 42px;
-    border: transparent;
+    border: transparent;    /* keine border von Input sichtbar*/
 }
 
 /* Eingabefeld der Seachbar wenn sie angeklickt ist*/
 
 #searchbar:focus{
-    outline: none;
+    outline: none;  /* auch bei focus keine outline, border*/
 }
 
 
 /* Content unter Searchbar: Position und Größe*/
 .Unter_searchbar {
-    padding-top: 1rem;
+    padding-top: 1rem; /* Abstand zur searchbar*/
 }
-
+/* Buttons gleich: border Abstand*/
 .Google-Suche_Button {
     border: 1px solid #f8f9fa;
-    
     margin-right: 0.25rem;
     background-color: #f8f9fa;
     color: #3c4043;
@@ -214,7 +205,6 @@ padding-top: 8px;
 
 .Glück_Button {
     border: 1px solid #f8f9fa;
-    
     margin-left: 0.25rem;
     background-color: #f8f9fa;
     color: #3c4043;
@@ -223,6 +213,7 @@ padding-top: 8px;
     border-radius: 4px;
 }
 
+/* Text in Buttons (gleich)*/
 .Google-Suche {
     text-decoration: none;
     color: #3c4043;
@@ -233,6 +224,7 @@ padding-top: 8px;
     color: #3c4043;
 }
 
+/* Hover Effekt der Buttons (gleich)*/
 .Google-Suche_Button:hover  {
     border: 1px solid #dadce0;
     color: #202124;
@@ -246,41 +238,45 @@ padding-top: 8px;
 }
 
 
-
+/* Footer Container*/
 .footer {
     background-color: #f2f2f2;
     color: #222;
-    display: flex;
+    display: flex;  /* Flexbox um oberen div (De) und Rest untereinder*/
     flex-direction: column;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 98.25px;
+    flex: 0 0 98.25px;  /*Gr des Footer fest*/
+    margin-top: auto;   /* damit Footer sticky und bis unter Buttons bewegbar*/
 }
 
+/* oberer Teil des Footers*/
 .top_Footer {
-padding: 1rem 2rem;
-border-bottom: 1px solid #dadce0;
+padding: 1rem 2rem; /* Abstand zur border*/
+border-bottom: 1px solid #dadce0;   /* border unten */
 color: rgba(0,0,0,.54);
 font-size: 15px;
 }
 
+/* unterer Teil des Footers*/
 .bottom_Footer {
-    display: flex;
+    display: flex;  /* Flexbox, damit untere Flexbox richtig angezeigt nebeneinander*/
+    justify-content: space-between;
     height: 2rem;
     margin-top: 1rem;
-    justify-content: space-between;
 }
+
+/* Schrift im Footer*/
 .Footer-Link {
     color: #70757a;
     text-decoration: none;
     padding: 1rem 0.75rem;
 }
 
+/* Hover Effekt der Links*/
 .Footer-Link:hover {
     text-decoration: underline;
 }
 
+/* weitere Einstellungen zu einzelnen Links im Footer*/
 .Werbeprogramme {
     padding-left: 2rem;
 }
@@ -295,4 +291,20 @@ font-size: 15px;
 
 .CO2 {
     padding-left: 0;
+}
+
+/* Media-Queries: Responsive Design*/
+
+/* Footer: Bottom: flex-wrap*/
+@media (max-width: 1200px) {
+    .bottom_Footer {
+        flex-direction: column;
+        height: 5rem;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .middle_Footer {
+        margin: 0.75rem auto;
+    }
 }
