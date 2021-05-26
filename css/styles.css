@@ -137,11 +137,13 @@ padding-top: 11px;  /* Abstand zum oberen Ende der Site*/
     border-radius: 24px;
     padding-left: 15px; /* Abstand des SuchIcons zur border*/
     height: 44px;   /* Grundeinstellung*/
-    width: 35rem;
     display: flex;  /* icon und input nebeneindander*/
     flex-direction: row;
     margin-bottom: 0.5rem;
-}
+    width: 70%; /* Breite der Searchbar*/
+    min-width: 22.5rem;
+    max-width: 36.5rem;
+   }
 
 /*Hover-Effekt der Searchbar */
 .searchbar_container:hover {
@@ -173,11 +175,20 @@ padding-top: 11px;  /* Abstand zum oberen Ende der Site*/
     opacity: 0.4;
     
 }
-
+/* div um input: width soll mit screenwidth korellieren*/
+.searchbar {
+   width: 85%;  /* 85% von searchbarcontainer*/
+   max-width: 30.5rem;
+   min-width: 16.5rem;
+   height: 35px;    /* height kleiner als container aber mittig*/
+   padding-top: 3px;
+   padding-bottom: 3px
+    
+}
 /*Eingabefeld der Searchbar Größe, keine border*/
 #searchbar {
-    width: 31.5rem;
-    height: 42px;
+    width: 100%;    /* width do groß wie div*/
+    height: 35px;
     border: transparent;    /* keine border von Input sichtbar*/
 }
 
@@ -295,16 +306,44 @@ font-size: 15px;
 
 /* Media-Queries: Responsive Design*/
 
-/* Footer: Bottom: flex-wrap*/
+/* Footer: Bottom: right middle left über- statt nebeneinander*/
 @media (max-width: 1200px) {
     .bottom_Footer {
         flex-direction: column;
-        height: 5rem;
+        height: 5rem;   /* Hintergrund über gesamten Bottom*/
         margin-bottom: 1rem;
         align-items: center;
     }
 
     .middle_Footer {
-        margin: 0.75rem auto;
+        margin: 0.75rem auto;   /* Abstand nach oben und unten*/
+    }
+}
+
+/* Footer ab width alles übereinander -flex wrap mittig*/
+@media (max-width: 520px) {
+    .bottom_Footer {
+        height: auto; /* height immer über ganzen Bottom*/
+    }
+    .left_Footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right_Footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Nav: Bei zu kleinem Bilschirm ÜberGoogle übereinander. Problem: springt (470 - 450px),
+ wegen line height ÜberGoogle und Store nicht mehr auf einer Linie*/
+@media (max-width: 466px) {
+    .ÜberGoogle {
+        line-height: 14px;
+        padding-right: 0px;
+        margin-right: 0px
     }
 }
